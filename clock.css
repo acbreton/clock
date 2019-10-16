@@ -1,0 +1,51 @@
+body {
+  background-color: gainsboro;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.main {
+  flex: 2;
+}
+.frame {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+  border: 10px solid black;
+  border-radius: 100%;
+}
+
+.hand {
+  width: 5px;
+}
+
+.hour {
+  background: linear-gradient(to bottom, transparent 50%, black 50%);
+  height: 180px;
+  z-index: 3;
+  position: relative;
+}
+
+.minute {
+  background: linear-gradient(to bottom, black 50%, transparent 50%);
+  height: 320px;
+  z-index: 2;
+  position: relative;
+}
+
+.second {
+  background: linear-gradient(to bottom, red 50%, transparent 50%);
+  height: 270px;
+  z-index: 1;
+  position: relative;
+}
