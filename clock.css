@@ -30,22 +30,22 @@ body {
 }
 
 .hour {
-  background: linear-gradient(to bottom, transparent 50%, black 50%);
+  background: linear-gradient(to bottom, black 50%, transparent 50%);
   height: 180px;
-  z-index: 3;
-  position: relative;
+  z-index: 1;
+  position: absolute;
 }
 
 .minute {
   background: linear-gradient(to bottom, black 50%, transparent 50%);
   height: 320px;
   z-index: 2;
-  position: relative;
+  position: absolute;
 }
 
 .second {
   background: linear-gradient(to bottom, red 50%, transparent 50%);
   height: 270px;
-  z-index: 1;
-  position: relative;
+  z-index: 3;
+  position: absolute;
 }

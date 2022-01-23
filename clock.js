@@ -5,7 +5,8 @@ let second_hand = document.getElementById('second_hand');
 let date = new Date();
 
 function getClockHour() {
-	let hourToDegrees = (new Date().getHours()) * 15;
+  let hour = new Date().getHours() % 12;
+	let hourToDegrees = (hour) * 30;
   document.getElementById("hour_hand").style.transform = `rotate(${hourToDegrees}deg)`;
 }
 
